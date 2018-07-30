@@ -1,0 +1,74 @@
+// main: ./style.less
+
+// Global modifier's
+.-input {
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid @grey;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.-fullWidth {
+  width: 100%;
+}
+
+.-halfWidth{
+  width: 50%;
+}
+
+.-quarterWidth {
+  width: 25%;
+}
+
+.-select {
+  height: 20px;
+}
+
+.-btn {
+  height: 30px;
+  border-radius: 3px;
+  font-size: 13px;
+  .transition(100ms);
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:hover {
+    cursor: pointer;
+    .transition(100ms);
+  }
+}
+
+.-btnGrey {
+  background: @grey;
+  border: 1px solid @darkGrey;
+  color: @black;
+
+  &:hover {
+    background: @darkGrey;
+    border: 1px solid @black;
+  }
+}
+
+.-btnBlue {
+  background: @lightBlue;
+  border: 1px solid @borderLightBlue;
+  color: @white;
+
+  &:hover {
+    background: @darkBlue;
+    border: 1px solid @borderDarkBlue;
+  }
+}
+
+.-btnRed {
+  background: @red;
+  border: 1px solid @borderRed;
+  color: @white;
+
+  &:hover {
+    background: @darkRed;
+    border: 1px solid @borderDarkRed;
+  }
+}

@@ -1,0 +1,72 @@
+//main: ./style.less
+
+// Colors
+@black:          #2f2f2f;
+@white:          #fdfdfd;
+
+@lightGrey:       @clr-grey-200;
+@grey:            #D3D4D7;
+@darkGrey:        @clr-grey-500;
+
+@darkBlue:         #505F99;
+@borderDarkBlue:   #354da7;
+
+@lightBlue:        #7396D1;
+@borderLightBlue:  #427dd1;
+
+@red:              @clr-red-300;
+@borderRed:        @clr-red-400;
+
+@darkRed:          @clr-red-400;
+@borderDarkRed:    @clr-red-600;
+
+@darkPink:   #44435F;
+
+@lightGreen: @clr-green-200;
+@darkGreen: @clr-green-500;
+
+p, a, h1, h2, h3, h4, h5, h6, input, label,
+tr, td {
+  font-family: 'proxima_novaregular';
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+* {
+  color: @black;
+}
+
+// Javascript classes
+.visibility {
+  visibility: hidden !important;
+}
+
+.-hidden {
+  display: none !important;
+}
+
+// Current page sidebar navigation highlight
+#dashboard a#dashboardNav,
+#customers a#customersNav,
+#inventory a#inventoryNav {
+  color: @lightBlue;
+  background: @black;
+
+  i {
+    color: @lightBlue !important;
+  }
+}

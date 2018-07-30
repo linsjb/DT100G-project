@@ -1,0 +1,160 @@
+// main: ../style.less
+
+// Sidebar (navigation)
+.m-sidebarHeader {
+  grid-area: logo;
+  background: @white;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.m-sidebarNavList {
+}
+
+.m-sidebarNavListItem {
+  margin-bottom: 15px;
+}
+
+// Dashboard
+.m-dashboardSection {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 40px 1fr;
+  grid-row: auto / span 5;
+  grid-row-gap: 10px;
+  grid-template-areas:
+  "icon     title"
+  "content  content";
+
+  background: @white;
+  padding: 20px;
+}
+
+// Customers
+.m-customersOverview {
+  padding: 15px;
+  background: @white;
+}
+
+.m-customerList {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 3;
+  grid-row-end: -1;
+
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+
+  padding: 15px;
+  overflow: hidden;
+  background: @white;
+}
+
+.m-customerListTableWrapper {
+  overflow: auto;
+}
+
+// Login
+.m-loginWindow {
+  width: 300px;
+  padding: 20px;
+  background: @white;
+  border-radius: 10px;
+}
+
+// Header
+.m-headerUserInfo {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 10px;
+
+  grid-template-areas:
+    "name   image"
+    "role   image";
+
+  align-content: center;
+  height: 100%;
+
+  p {
+    transition: 200ms;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    P {
+      color: @lightBlue;
+      transition: 200ms;
+    }
+  }
+}
+
+.m-popupArrow {
+  position: absolute;
+  top: -12px;
+  display: grid;
+  justify-self: end;
+  margin-right: 10px;
+  .arrow(up, 12px, @white);
+}
+
+// Inventory
+.m-inventoryOverview {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 15px;
+
+  grid-template-areas:
+    "title"
+    "content";
+
+  padding: 15px;
+  background: @white;
+  grid-column: span 6;
+  grid-row: span 5;
+}
+
+.m-inventory {
+  background: @white;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row: span 20;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.m-inventoryArea {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 30px;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  grid-auto-rows: 50px;
+}
+
+// New customer & customer
+.m-customer {
+  display: grid;
+}
+
+.m-customerNav {
+  grid-column: 1 / 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  align-self: end;
+}
+
+.m-deleteConfirmation {
+  background: @white;
+  padding: 10px;
+}

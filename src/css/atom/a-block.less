@@ -1,0 +1,272 @@
+// main: ../style.less
+
+.a-sidebarNavListBtn {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+
+  text-decoration: none;
+  color: @white;
+  padding: 10px 0;
+  padding-left: 20px;
+  transition-duration: 100ms;
+
+  &:hover {
+    transition-duration: 100ms;
+    color: @lightBlue;
+    background: @black;
+
+    i {
+      color: @lightBlue !important;
+    }
+  }
+}
+
+.a-dashboardSectionContent {
+  grid-area: content;
+  grid-row-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.a-dashboardPopupFormSection {
+  grid-area: customerInfoFields;
+}
+
+.a-formSectionRow {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.a-popupWindowButtons {
+  grid-area: buttons;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.a-dashboardPopupNewSubSearch {
+  grid-area: content;
+
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+
+  width: 50%;
+}
+
+.a-customerListTable {
+  width: 100%;
+}
+
+.a-customerDetailsCustomerInfo {
+  grid-area: customerDetails;
+}
+
+.a-customerDetailsSubscriptions {
+  grid-area: subDetails;
+
+  display: grid;
+  grid-template-columns: 250px;
+  grid-auto-columns: 250px;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr;
+
+  grid-gap: 10px;
+
+  overflow: auto;
+}
+
+.a-customerInventorySubscription {
+  background: @lightGrey;
+  padding: 15px;
+}
+
+.a-loginFormGroup {
+  position: relative;
+}
+
+.a-userPopupNavListBtn {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 0;
+
+  &:hover {
+    color: @lightBlue;
+    transition: 200ms;
+
+    i {
+      color: @lightBlue;
+      transition: 200ms;
+    }
+  }
+}
+
+.a-inventoryOverviewContent {
+  grid-area: content;
+  height: 100%;
+  width: 100%;
+}
+
+.a-inventoryTableHeader {
+  border-left: 1px solid @grey;
+  border-right: 1px solid @grey;
+  border-bottom: 2px solid @grey;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.a-inventoryCellItem {
+  background: @black;
+  border-radius: 10px;
+}
+
+.a-newCustomerContent {
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 15px;
+
+  grid-template-rows: 40px;
+  grid-auto-rows: 30px;
+  grid-row-gap: 15px;
+
+  justify-items: end;
+  align-items: center;
+}
+
+.a-customerContent {
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-auto-rows: 40px;
+  grid-column-gap: 15px;
+
+  align-items: center;
+}
+
+.m-customerNav {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.a-customerNavList {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.a-newSubscription {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: 3px dashed @grey;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.a-newSubscriptionForm {
+  padding: 15px;
+  background: @white;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 15px;
+
+  grid-template-rows: min-content;
+  grid-auto-rows: min-content;
+  grid-row-gap: 15px;
+
+  align-items: center;
+}
+
+.a-newSubscriptionButtons {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+
+  input {
+    margin-left: 15px;
+  }
+}
+
+// Subscription
+.a-subscription {
+  background: @white;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 15px;
+}
+
+.test {
+  align-items: center;
+  grid-row-start: 1;
+  grid-row-end: -1;
+
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-column-gap: 15px;
+
+  grid-template-rows: min-content;
+  grid-auto-rows: min-content;
+  grid-row-gap: 15px;
+}
+
+.a-customerSidebarContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  grid-auto-rows: min-content;
+  grid-row-gap: 15px;
+  background: @white;
+  padding: 10px;
+}
+
+.a-customerSidebarBottomContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+
+  grid-template-rows: min-content;
+  grid-auto-rows: min-content;
+  grid-row-gap: 15px;
+
+  background: @lightGrey;
+  border-top: 1px solid @darkGrey;
+  border-bottom: 1px solid @darkGrey;
+  padding: 10px;
+}
+
+.a-deleteConfirmButtons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+}

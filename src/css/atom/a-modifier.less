@@ -1,0 +1,43 @@
+// main: ../style.less
+
+.a-dashboardSectionContent__icon.-btn {
+  &:hover {
+    cursor: pointer;
+    color: @darkBlue;
+  }
+}
+
+.a-dashboardSectionContent__icon.-light {
+  color: @grey;
+}
+
+.a-dashboardSectionContent__icon.-dark {
+  color: @darkPink;
+}
+
+.a-sidebarNavListBtn.-current {
+  color: @lightBlue;
+  background: @black;
+
+  i {
+    color: @lightBlue !important;
+  }
+}
+
+.a-customerListTable__row.-dataRow {
+  transition-duration: 100ms;
+
+  &:hover {
+    transition-duration: 100ms;
+    // cursor: pointer;
+    background-color: @lightBlue;
+  }
+}
+
+.a-inventoryNavList__item.-active {
+  background: @lightBlue;
+}
+
+.a-customerNavList__item.-current {
+  background: @lightGrey;
+}

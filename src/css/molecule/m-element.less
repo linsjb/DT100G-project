@@ -1,0 +1,115 @@
+// main: ../style.less
+
+// Sidebar
+.m-sidebarNavList__item {
+}
+
+.m-sidebarHeader__logo {
+  width: 70%;
+  align-self: center;
+}
+
+
+// Dashboard
+.m-dashboardSection__icon {
+  grid-area: icon;
+}
+
+.m-dashboardSection__title {
+  grid-area: title;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+
+// Customers
+.m-customersOverview__item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+
+// Header
+.m-headerUserInfo__name {
+  font-size: 16px;
+  grid-area: name;
+  align-self: end;
+  justify-self: end;
+}
+
+.m-headerUserInfo__role {
+  grid-column: 1 / span 1;
+  font-size: 14px;
+  grid-area: role;
+  align-self: start;
+  justify-self: end;
+}
+
+.m-headerUserInfo__img {
+  align-self: center;
+  border-radius: 50%;
+  grid-area: image;
+}
+
+
+// Header user popup
+.m-userPopupNavList__item {
+}
+
+.m-inventoryOverview__title {
+  grid-area: title;
+}
+
+
+// Inventory
+.m-inventory__nav {
+  background: @lightGrey;
+}
+
+.m-inventoryArea__header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-inventoryArea__Cell {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+  padding: 5px;
+  border: 1px solid @grey;
+
+  &:hover {
+    background: rgba(214, 93, 69, 1);
+    cursor: pointer;
+
+    span {
+      background: rgba(124, 111, 108, 1);
+    }
+  }
+}
+
+
+// Customer
+.m-customerInfo__label {
+  text-align: right;
+  font-weight: bold;
+}
+
+.m-customerInfo__info {
+  font-size: 16px;
+}
+
+// Delete conformation
+.m-deleteConfirmation__title {
+  margin-bottom: 15px;
+}
+
+.m-deleteConfirmation__info {
+  margin-bottom: 15px;
+}
