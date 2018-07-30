@@ -11,7 +11,7 @@ host('35.178.132.212')
   ->identityFile('~/.ssh/ec2inst.pem');
 
 
-set('repository', 'git@github.com:linsjb/DT100G-Webprogrammering.git');
+set('repository', 'git@github.com:linsjb/DT100G-project.git');
 set('shared_files', ['config.php']);
 
 
