@@ -37,12 +37,6 @@ $userFullName = $_SESSION['userDetails'][0]->firstName . ' ' . $_SESSION['userDe
   </div>
   <ul class="m-userPopupNavList">
     <li class="m-userPopupNavList__item">
-      <a href="" class="a-userPopupNavListBtn">
-        <i class="a-userPopupNavListBtn__icon material-icons">settings</i>
-        Profile settings
-      </a>
-    </li>
-    <li class="m-userPopupNavList__item">
       <a href="logout.php" class="a-userPopupNavListBtn">
         <i class="a-userPopupNavListBtn__icon material-icons">favorite</i>
         Logout
