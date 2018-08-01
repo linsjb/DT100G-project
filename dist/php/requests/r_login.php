@@ -22,7 +22,7 @@ if(isset($_POST['login'])) {
   $password = $_POST['password'];
 
   $userControl = $dbConnection->rowCount("SELECT COUNT(id) FROM users WHERE username='$username' AND password='$password'");
-  $userData = $dbConnection->select("SELECT username, firstName, lastName, userRole, email FROM users WHERE username='admin' AND password='admin'");
+  $userData = $dbConnection->select("SELECT username, firstName, lastName, userRole, email FROM users WHERE username='$username' AND password='$password'");
 
   // If the user is located start the session to allow access. And then redirect to dashboard.
   if($userControl == "1") {
