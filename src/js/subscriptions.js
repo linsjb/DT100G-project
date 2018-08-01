@@ -126,27 +126,3 @@ function populatetireDimensions() {
 export function subscriptionBarcode() {
   jsBarcode(".a-subscription__barcode").init();
 }
-
-// Logic and popup to delete a subscription.
-export function deleteSubscription() {
-  let deleteButtons = Array.from(document.getElementsByClassName('a-subscription__delete'));
-  let cancelButton = document.getElementsByName('delSubCancel')[0];
-
-  let popup = document.getElementById('deleteSubscription');
-
-  deleteButtons.map((deleteButton) => {
-    deleteButton.addEventListener('click', function() {
-      // let subscriptionId =  this.parentNode.id.split('-').pop().trim();
-      // let customerId = document.getElementsByClassName('o-content')[0].id.split('-').pop().trim();
-
-
-      // location.href = `customer.php?id=${customerId}&subId=${subscriptionId}&tab=subs`;
-
-      popup.classList.remove('-hidden');
-    });
-  });
-
-  cancelButton.addEventListener('click', function() {
-    popup.classList.add('-hidden');
-  });
-}

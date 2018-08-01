@@ -19,7 +19,6 @@ include 'header.php';
 include $requestsDir . 'r_customer.php';
 
 include $requestsDir . 'r_newSubscription.php';
-include $requestsDir . 'r_deleteSubscription.php';
 
 include $requestsDir . 'r_deleteCustomer.php';
 include $requestsDir . 'r_changeCustomer.php';
@@ -193,7 +192,7 @@ include $requestsDir . 'r_changeCustomer.php';
     foreach($subscriptionsData as $subscriptionData) {
       echo '
       <div class="a-subscription" id="subscription-' . $subscriptionData->id . '">
-        <div class="test">
+        <div class="a-subscriptionContent">
         <h4 class="a-subscription__title">Subscription information</h4>
 
         <h5 class="a-subscription__subTitle">Start hire date</h5>
@@ -225,8 +224,6 @@ include $requestsDir . 'r_changeCustomer.php';
         <p class="a-subscription__info">' . $subscriptionData->tireDimensions . '</p>
       </div>
 
-      <i class="a-subscription__delete material-icons md-36">delete_forever</i>
-
       <svg
         class="a-subscription__barcode"
         jsbarcode-height=40
@@ -235,8 +232,6 @@ include $requestsDir . 'r_changeCustomer.php';
         jsbarcode-fontSize=16
       ></svg>
       </div>
-
-      <input form="deleteSubForm" type="hidden" name="subscriptionId" value="' . $subscriptionData->id . '">
       ';
     }
     ?>
@@ -282,24 +277,6 @@ include $requestsDir . 'r_changeCustomer.php';
     <form class="a-deleteConfirmButtons" method="post">
       <input class="a-deleteConfirmButtons__btn -btn -btnGrey" type="button" name="confirmCancel" value="Cancel">
       <input class="a-deleteConfirmButtons__btn -btn -btnRed" type="submit" name="confirmDelete" value="Delete">
-    </form>
-  </div>
-</div>
-
-<!-- Delete subscription confirmation popup -->
-<div class="o-popup -hidden" id="deleteSubscription">
-  <div class="m-deleteConfirmation">
-    <h3 class="m-deleteConfirmation__title">Delete confirmation</h3>
-
-    <p class="m-deleteConfirmation__info">
-      Do you really want to delete this subscription?
-      </br>
-      This can't be undone!
-    </p>
-
-    <form id="deleteSubForm" class="a-deleteConfirmButtons" method="post">
-      <input class="a-deleteConfirmButtons__btn -btn -btnGrey" type="button" name="delSubCancel" value="Cancel">
-      <input class="a-deleteConfirmButtons__btn -btn -btnRed" type="submit" name="delSubConfirm" value="Delete">
     </form>
   </div>
 </div>

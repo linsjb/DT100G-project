@@ -808,10 +808,10 @@ h4 {
   background: #fdfdfd;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   padding: 15px;
 }
-.test {
+.a-subscriptionContent {
   align-items: center;
   grid-row-start: 1;
   grid-row-end: -1;
@@ -1000,31 +1000,6 @@ h4 {
 .a-subscription__info {
   grid-column-start: 2;
   grid-column-end: 2;
-}
-.a-subscription__delete {
-  align-self: start;
-  justify-self: end;
-  color: #2f2f2f;
-  transition: 100ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 100ms;
-  -webkit-transition-timing-function: ease-in-out;
-  -moz-transition: 100ms;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition: 100ms;
-  -o-transition-timing-function: ease-in-out;
-}
-.a-subscription__delete:hover {
-  cursor: pointer;
-  color: #7396D1;
-  transition: 100ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 100ms;
-  -webkit-transition-timing-function: ease-in-out;
-  -moz-transition: 100ms;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition: 100ms;
-  -o-transition-timing-function: ease-in-out;
 }
 .a-subscription__barcode {
   align-self: end;

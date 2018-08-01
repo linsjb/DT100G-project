@@ -37,7 +37,6 @@ window.onload = function () {
 
       subscriptions.populateTires();
       subscriptions.subscriptionBarcode();
-      subscriptions.deleteSubscription();
 
       customers.changeTab();
       customers.openCloseNewSub();
